@@ -104,6 +104,7 @@ export const updateLocation = async (req, res) => {
 };
 
 // Delete a location by ID
+
 export const deleteLocation = async (req, res) => {
   try {
     const location = await Location.findByIdAndDelete(req.params.id);

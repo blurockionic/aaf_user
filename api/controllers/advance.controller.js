@@ -4,7 +4,6 @@ import Advance from "../models/advance.model.js";
 export const createAdvance = async (req, res) => {
   const { employeeId, advanceAmount, date, extraBonus } = req.body;
 
-  console.log("working", req.body);
   try {
     const advance = new Advance({
       employeeId: employeeId,
